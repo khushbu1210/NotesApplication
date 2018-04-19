@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/add_new_item"
+        android:icon="@drawable/ic_note_add"
+        android:title="Add New"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/sorting"
+        android:icon="@drawable/ic_sort"
+        android:title="Sorting"
+        app:showAsAction="always"></item>
+</menu>

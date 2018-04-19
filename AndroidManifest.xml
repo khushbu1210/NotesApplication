@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.khushbu.notesapp" >
+
+    <uses-sdk
+        android:minSdkVersion="10"
+        android:targetSdkVersion="19" />
+
+    <uses-feature android:name="android.hardware.LOCATION" />
+
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <android:uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme" >
+        <activity android:name=".MainActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".NotesList"
+            android:label="Notes"
+            android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity
+            android:name=".AddNotes"
+            android:label="New Note"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".AddSubjects"
+            android:label="Subject"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".PhotoGallery"
+            android:label="Gallery" />
+        <activity
+            android:name=".VoiceNotes"
+            android:label="Voice Notes" />
+        <activity
+            android:name=".AddVoiceNotes"
+            android:label="New Voice Notes" />
+        <activity android:name=".FullImage" >
+        </activity>
+    </application>
+
+</manifest>
